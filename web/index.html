@@ -1,0 +1,28 @@
+
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h1>Welcome to johari window app</h1>
+        </br>
+        <h1>Open new johari window, visit existing instance, or check results</h1>
+        <form method="GET" action="NewJohariWindow">
+            <input type="submit" value="New johari window"></input>
+        </form>
+        </br>
+        <form method="POST" action="VisitJohariWindow">
+            <label>Put johari window code:</label>
+            <input type="text" name="johari_window_id"></input>
+            <input type="submit" value="Visit johari window"></input>
+        </form>
+        </br>
+        <form method="POST" action="ResultsJohariWindow">
+            <label>Put johari window code:</label>
+            <input type="text" name="johari_window_id"></input>
+            <input type="submit" value="See results of johari window"></input>
+        </form>
+    </body>
+</html>
