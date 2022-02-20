@@ -86,11 +86,12 @@ public class ResultsJohariWindow extends HttpServlet {
         int unknown_amount = johari_db.getUnknownAmount(johari_window_id);
         
         
+        
         RequestDispatcher requestDispatcher;
         request.setAttribute("johari_window_id", johari_window_id);
-        request.setAttribute("arena_traits", arena_traits);
-        request.setAttribute("facade_traits", facade_traits);
-        request.setAttribute("blindspot_traits", blindspot_traits);
+        request.setAttribute("arena_traits", String.join(", ", arena_traits));
+        request.setAttribute("facade_traits", String.join(", ", facade_traits));
+        request.setAttribute("blindspot_traits", String.join(", ", blindspot_traits));
         request.setAttribute("unknown_amount", unknown_amount);
         requestDispatcher = request.getRequestDispatcher("/JohariResults.jsp");
         requestDispatcher.forward(request, response);

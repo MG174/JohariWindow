@@ -146,6 +146,8 @@ public class JohariDatabase {
                 System.out.println("Sum of unknown: ");
                 System.out.println(rs.getString("sum_of_traits"));
             }
+            
+            unknown_amount = Integer.getInteger(unknown_amount_string);
 
             // Close all the connections
             st.close();
@@ -155,7 +157,7 @@ public class JohariDatabase {
             System.out.println("Error happend: " + e.getMessage());
         }
 
-        unknown_amount = Integer.getInteger(unknown_amount_string);
+        
 
         return unknown_amount;
     }
