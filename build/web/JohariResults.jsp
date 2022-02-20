@@ -28,6 +28,7 @@
 			<div class="divTableCell">FACADE: ${facade_traits}</div>
 			<div class="divTableCell">UNKNOWN </div>
 		</div>
+                        test
 	</div>
 </div>
     </body>
